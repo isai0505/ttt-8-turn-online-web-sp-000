@@ -24,6 +24,10 @@ def valid_move?(board, index)
   end
 end
 
+def position_taken(board, index)
+!  (board[index] == " " || board[index] == "" || board[index] == nil)
+end
+
 def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
