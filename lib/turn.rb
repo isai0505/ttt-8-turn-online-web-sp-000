@@ -35,4 +35,5 @@ def turn(board)
   valid_move?(board, index)
   if valid_move?(board, index) == false
     turn(board)
+  end
 end
